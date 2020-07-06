@@ -6,11 +6,16 @@ import Header from './Header';
 import Note from './Note';
 import Footer from './Footer';
 
+// DATA
+import notes from '../notes';
+
 const App = () => {
     return (
         <div>
             <Header />
-            <Note />
+            { notes.map(note => 
+                <Note key={note.key} title={note.title} content={note.content} />
+            )}
             <Footer />
         </div>
     );
