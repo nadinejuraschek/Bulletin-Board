@@ -1,7 +1,4 @@
-// REACT
-import React from 'react';
-
-const Note = ({ title, content }) => {
+export const Note = ({ title, content }) => {
     return (
         <div className='note'>
             <h1>{title}</h1>
@@ -9,5 +6,3 @@ const Note = ({ title, content }) => {
         </div>
     );
 };
-
-export default Note;
