@@ -1,4 +1,4 @@
-export interface NoteProps {
+export type Note = {
   content: string;
   title?: string;
-}
+};
