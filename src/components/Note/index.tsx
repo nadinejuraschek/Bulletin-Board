@@ -1,18 +1,42 @@
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
 import { NoteProps } from './types';
+import styles from './note.module.css';
 
 export const Note = ({
   content,
   id,
+  mediaSrc = '',
   onDelete,
   title = '',
 }: NoteProps): JSX.Element => {
   const handleDelete = (): void => onDelete(id);
 
   return (
-    <div className='note'>
-      {title && <h1>{title}</h1>}
-      <p>{content}</p>
-      <button onClick={handleDelete}>Delete</button>
-    </div>
+    <Card className={styles.note}>
+      {mediaSrc && (
+        <CardMedia component='img' height='140' image={mediaSrc} alt={title} />
+      )}
+      <CardContent>
+        {title && (
+          <Typography gutterBottom variant='h5' component='div'>
+            {title}
+          </Typography>
+        )}
+        <Typography color='text.secondary' variant='body1' component='p'>
+          {content}
+        </Typography>
+      </CardContent>
+      <CardActions className={styles.actions}>
+        <IconButton aria-label='delete-note' onClick={handleDelete}>
+          <DeleteForeverIcon />
+        </IconButton>
+      </CardActions>
+    </Card>
   );
 };

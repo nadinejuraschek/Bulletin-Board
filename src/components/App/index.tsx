@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import { Board } from '../Board';
 import { Header } from '../Header';
-import { Note } from '../Note';
 import { Footer } from '../Footer';
-import { CreateNote } from '../CreateNote';
+import { SpeedDial } from '../SpeedDial';
 import { notes as starterNotes, Note as NoteType } from '../../data';
+import './app.module.css';
 
 export const App = (): JSX.Element => {
   const [notes, setNotes] = useState<NoteType[] | []>(starterNotes);
@@ -21,18 +22,8 @@ export const App = (): JSX.Element => {
   return (
     <div>
       <Header />
-      <CreateNote onAdd={addNote} />
-      {notes.map(
-        (note: NoteType, index: number): JSX.Element => (
-          <Note
-            content={note.content}
-            id={index}
-            key={index}
-            onDelete={deleteNote}
-            title={note.title}
-          />
-        )
-      )}
+      <Board deleteNote={deleteNote} notes={notes} />
+      <SpeedDial addNote={addNote} />
       <Footer />
     </div>
   );

@@ -1,0 +1,7 @@
+.note {
+  background: var(--white);
+}
+
+.actions {
+  justify-content: right;
+}

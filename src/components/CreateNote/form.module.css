@@ -1,0 +1,9 @@
+.formWrapper {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+}
+
+.actions {
+  justify-content: center;
+}
