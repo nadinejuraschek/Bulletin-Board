@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { CreateNote } from '../CreateNote';
 import SpeedDialComp from '@mui/material/SpeedDial';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
-import { CreateNote } from '../CreateNote';
-import styles from './speedDial.module.css';
 import { SpeedDialProps } from './types';
+import styles from './speedDial.module.css';
+import { useState } from 'react';
 
 export const SpeedDial = ({ addNote }: SpeedDialProps): JSX.Element => {
   const [displayCreateForm, setDisplayCreateForm] = useState(false);

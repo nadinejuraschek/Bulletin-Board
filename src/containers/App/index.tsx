@@ -1,10 +1,10 @@
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { useState } from 'react';
-import { Board } from '../Board';
-import { Header } from '../Header';
-import { SpeedDial } from '../SpeedDial';
-import { notes as starterNotes, Note as NoteType } from '../../data';
 import './app.module.css';
+
+import { Board, Header, SpeedDial } from '../../components';
+import { Note as NoteType, notes as starterNotes } from '../../data';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+import { useState } from 'react';
 
 const theme = createTheme({
   palette: {

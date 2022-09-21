@@ -4,8 +4,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import { NoteProps } from './types';
+import Typography from '@mui/material/Typography';
 import styles from './note.module.css';
 
 export const Note = ({

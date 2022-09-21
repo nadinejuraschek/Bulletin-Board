@@ -1,7 +1,7 @@
-import Masonry from '@mui/lab/Masonry';
 import { BoardProps } from './types';
-import { Note } from '../Note';
 import { Footer } from '../Footer';
+import Masonry from '@mui/lab/Masonry';
+import { Note } from '../Note';
 import { Note as NoteType } from '../../data';
 import styles from './board.module.css';
 

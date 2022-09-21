@@ -4,7 +4,7 @@ export const notes: Note[] = [
     {
       title: "The Canary Islands Are Named After Dogs",
       content:
-        "It might seem safe to assume that the Canary Islands were named after canary birds, but the location was actually named for a different animal. In Spanish, the area's name is Islas Canarias, which comes from the Latin phrase Canariae Insulae for \"island of dogs.\""
+        "It might seem safe to assume that the Canary Islands were named after canary birds, but the location was actually named for a different animal. In Spanish, the area's name is Islas Canarias which comes from the Latin phrase Canariae Insulae for \"island of dogs.\""
     },
     {
       title: 'Climate Change Is Causing Flowers to Change Color',

@@ -1,12 +1,13 @@
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import TextField from '@mui/material/TextField';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Button from '@mui/material/Button';
 import { ChangeEvent, MouseEvent, useState } from 'react';
+
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 import { CreateNoteProps } from './types';
 import { Note as NoteType } from '../../data';
+import TextField from '@mui/material/TextField';
 import styles from './form.module.css';
 
 export const CreateNote = ({
