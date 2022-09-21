@@ -1,18 +1,18 @@
+:root {
+  --black: #212121;
+  --error: #D12929;
+  --off-white: #f8f8f8;
+  --primary: #AA7368;
+  --secondary: #9faa68;
+  --shadow: #00000060;
+  --white: #ffffff;
+  --warning: #ffbf00;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-  --brown: #AA7368;
-  --chocolate: #AD7F76;
-  --gray: #a8a8a8;
-  --green: #B5AC9D;
-  --light_gray: #cccccc;
-  --light_green: #E5E8E3;
-  --off-white: #f8f8f8;
-  --orange: #CA9074;
-  --shadow: #00000030;
-  --white: #ffffff;
 }
 
 html {
@@ -22,4 +22,8 @@ html {
 body {
   background-color: var(--off-white);
   background-image: url("https://www.transparenttextures.com/patterns/wine-cork.png");
+}
+
+button:focus {
+  outline: 5px auto var(--warning);
 }

@@ -78,6 +78,7 @@ export const CreateNote = ({
         <CardActions className={styles.actions}>
           <Button
             aria-label='add-note'
+            color='primary'
             onClick={handleSubmit}
             variant='contained'
           >

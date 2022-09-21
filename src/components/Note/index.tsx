@@ -33,7 +33,11 @@ export const Note = ({
         </Typography>
       </CardContent>
       <CardActions className={styles.actions}>
-        <IconButton aria-label='delete-note' onClick={handleDelete}>
+        <IconButton
+          aria-label='delete-note'
+          color='error'
+          onClick={handleDelete}
+        >
           <DeleteForeverIcon />
         </IconButton>
       </CardActions>

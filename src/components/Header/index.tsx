@@ -5,7 +5,7 @@ export const Header = (): JSX.Element => {
   return (
     <header className={styles.header}>
       <Typography gutterBottom variant='h3' component='h1'>
-        Bulletin Board
+        Random Facts
       </Typography>
     </header>
   );
